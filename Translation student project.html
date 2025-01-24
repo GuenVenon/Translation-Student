@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Inductory Workbook on Translation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-background">
+        <iframe id="background-video" 
+                src="https://www.youtube.com/embed/Kd7Wrtc85n4?autoplay=1&mute=1&loop=1&playlist=Kd7Wrtc85n4" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <header>
+        <h1 id="site-title">An Inductory Workbook on Translation</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                
+                <li><a href="#chapter" onclick="showSection('chapter')">Chapter</a></li>
+                <li>
+                    <select id="language-selector" onchange="changeLanguage()">
+                        <option value="en">English</option>
+                        <option value="ms">Bahasa Melayu</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <img id="homepage-banner" src="hhh.jpg" alt="Translation Banner" class="homepage-banner">
+            <h2>Welcome to Inductory Workbook On Translation</h2>
+            <p>The Inductory Workbook on Translation is a thorough reference for aspiring and professional translators, with an emphasis on improving their abilities and technical knowledge.
+                Chapter 1 discusses the fundamental concepts and scope of translation, emphasizing its significance in bridging cultural and language divides. 
+                The second chapter goes into the fundamentals of translating and interpreting, offering insights into efficient cross-linguistic communication.
+                Chapter 3 stresses linguistic correctness and technical skill, providing learners with the tools they need to produce exact and high-quality translations. 
+                Finally, Chapter 4 delves into advanced procedures and editing processes, honing the art of translation to produce more subtle and compelling outcomes. 
+                This workbook is a must-have for anybody aspiring to be a successful translator.</p>
+            <button onclick="showSection('chapter')">Start Learning</button>
+        </section>
+        
+        <section id="about" class="content-section" style="display: none;">
+            <h2>About Us</h2>
+            <p>We provide resources and support for translation students.</p>
+        </section>
+
+        <section id="chapter" class="content-section en" style="display: none;">
+            <h2 id="chapter-title">Chapter Selection</h2>
+            <p id="chapter-intro">Welcome to the Chapters section! Here you'll discover materials to help you improve your translation abilities. 
+                Chapter 1 addresses the fundamentals of translation, while Chapter 2 discusses key interpretation tactics. 
+                Chapter 3 covers linguistic correctness and technical abilities, while Chapter 4 discusses advanced procedures and editing practices. 
+                Dive in and hone your skills!</p>
+
+                <div class="sub-topic">
+                    <div class="subtopic-box">
+                        <h3 id="intro-title">Chapter 1: Introduction to Translation</h3>
+                        <p id="intro-description">This chapter introduces the fundamental concepts of translation and interpretation.</p>
+                        <button onclick="toggleSubSection('intro-translation')">Learn More</button>
+                        <div id="intro-translation" class="sub-section" style="display: none;">
+                            <p id="intro-content">Translation is the process of converting text from one language to another.</p>
+                            <button onclick="toggleSubTopics('intro-subtopics')">Show Subtopics</button>
+                            <div id="intro-subtopics" class="sub-topics" style="display: none;">
+                                <ul>
+                                    <li>
+                                        <span onclick="toggleSubtopicDetail('intro-subtopic1')" class="clickable-box" id="definition-title">Definition of Translation</span>
+                                        <div id="intro-subtopic1" class="subtopic-detail" style="display: none;" aria-live="polite">
+                                            <p onclick="toggleDetails('translation-details')" class="clickable-paragraph" id="definition-content">
+                                                Translation, much like powerful patent translation, as you might have heard, is the art of 
+                                                converting written words from one language to another. It consists of two types of languages,
+                                                viz. source language and target language(s). The former is the language of the original 
+                                                documents, while the latter is the language in which the documents need to be translated. 
+                                                So, when you approach a translation vendor, you will be asked about the source and target 
+                                                languages. Upon translation, you will receive a similar copy of the original files in a different 
+                                                language (target languages). 
+                                                <br><br>You can use this translated copy to reach a global audience, communicate, and achieve your end objective. 
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span onclick="toggleSubtopicDetail('intro-subtopic2')"  class="clickable-box" id="definition-title2">Translation Exactly Meaning</span>
+                                        <div id="intro-subtopic2" class="subtopic-detail" style="display: none;">
+
+                                            <p onclick="toggleDetails('translation-details-2')" class="clickable-paragraph" id="definition-content2">
+                                                Translation is the transfer of written text from one language -the source- to another language -the target. 
+                                                Although translation and interpretation mostly used interchangeably, by actual definition, translation refers to the written language, 
+                                                and interpretation refers to the spoken language.
+                                                <br><br> The purpose of translation is to convey the intent of a message and the original tone, keeping in mind regional and cultural differences 
+                                                between the target and source languages.
+                                                Nowadays, translation is a sector in which a lot of activity is happening; all this is due to the increasing globalization of companies. 
+                                                A large number of people live in a country who can't speak their local language fluently.
+                                                <br><br>Of course, all this bodes well for the translation industry. There are different types of translation that may be required, and each of them is unique in its own way with 
+                                                its own set of requirements and processes. 
+                                                In case you are doing businesses at the international level, it would be handy to hire translation services near me that understand your specific needs and can cater to those. 
+                                                The seasoned translation service professionals 
+                                                who work either as a part of some company or as an individual can provide the exact translation service one has expected from them.
+                                                
+                                            </p>
+
+                                            <li>
+                                                <span onclick="toggleSubtopicDetail('intro-subtopic3')"  class="clickable-box" id="definition-title3">Interpretation Meaning</span>
+                                        <div id="intro-subtopic3" class="subtopic-detail" style="display: none;">
+
+                                            <p onclick="toggleDetails('translation-details-3')" class="clickable-paragraph" id="definition-content3">
+                                                Interpretation is the oral rendition in a target language of spoken or signed communication in another language that maintains conveys the meaning, tone, 
+                                                and intent of the message accurately and appropriately for an audience. Unlike translation, which deals with written text, interpretation is done more 
+                                                or less simultaneously and thus usually occurs in the presence of the speaker—usually in real-time during a conference, meeting, courtroom, or medical appointment setting. 
+                                            </p>
+                                            <li>
+                                                <span onclick="toggleSubtopicDetail('intro-subtopic4')"  class="clickable-box" id="definition-title4">Type of Interpretation</span>
+                                        <div id="intro-subtopic4" class="subtopic-detail" style="display: none;">
+
+                                            <p onclick="toggleDetails('translation-details-4')" class="clickable-paragraph" id="definition-content4">
+                                            There are 14 types of interpretations, each of which will be explained along with examples to provide better understanding
+                                            </p>
+                                            <ul id="translation-details-4" class="hidden-details" style="display: none;">
+                                                <li onclick="showExplanation('explanation1')" class="clickable-item" id="explanation-title">Simultaneous Interpretation</li>
+                                                &nbsp;<div id="explanation1" style="display: none;">The interpreter listens to a speaker while interpreting the message into a target language almost simultaneously in order to be in tune with the speaker. 
+                                                    &nbsp;Typical situations where this type of interpretation is used include:<br>
+                                                    <br>•	Conference settings
+                                                    <br>•	Multilingual meetings
+                                                    <br>•	Broadcast settings
+                                                    <br><br>Requires special equipment: headphones and microphones.
+                                                    </div>
+                                                
+                                                <br><li onclick="showExplanation('explanation2')" class="clickable-item"  id="explanation-title2">Consecutive Interpretation</li>
+                                                &nbsp;<div id="explanation2" style="display: none;">The speaker allows pauses between utterances, generally one complete sentence or segment at a time, to allow time for the interpreter to produce his own spoken rendition. Typical situations are bilateral meetings, legal settings-for example, court interpretations-and medical appointments-with a doctor and his/her patients.
+                                                    <br>- Most often requires the taking of notes to ensure accuracy.  
+                                                    </div>
+                                                
+                                                <br><li onclick="showExplanation('explanation3')" class="clickable-item" id="explanation-title3">Whispered Interpretation</li>
+                                                &nbsp;<div id="explanation3" style="display: none;">- The interpreter is whispering the translation right into the ear of one or two listeners.
+                                                    <br>- Applicable to small groups where one or two persons require interpretation.
+                                                    <br>- No equipment is required but this practice is physically tiring for the interpreter.</div>
+
+                                                    <br><li onclick="showExplanation('explanation4')" class="clickable-item">Relay Interpretation</li> 
+                                                    &nbsp;<div id="explanation4" style="display: none;">
+                                                        - Requires the use of an intermediary language when direct interpretation is not possible.
+                                                        <br>- For example, from Korean to English and then from English into French.
+                                                        <br>- Common practice during multilingual events when there are rare language combinations.
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation5')" class="clickable-item">Liaison Interpretation </li> 
+                                                    &nbsp;<div id="explanation5" style="display: none;"> - The interpreting enables communication either informally or formally between two
+                                                        <br>- Applies to business negotiations, interviews, and community services.
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation6')" class="clickable-item">Sign Language Interpretation </li> 
+                                                    &nbsp;<div id="explanation6" style="display: none;"> - Translates spoken language into sign language for Deaf or hard-of-hearing people, and vice versa.  
+                                                       <br> - Applied in educational, legal, medical, and cultural arenas.  
+                                                        <br>- Certification and cultural sensitivity are also required.                                                          
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation7')" class="clickable-item">Phone Interpretation   </li> 
+                                                    &nbsp;<div id="explanation7" style="display: none;">- The interpreters work remotely and facilitate conversations over the phone.  
+                                                        <br>- It is common in customer service, medical, and legal applications.  
+                                                        <br>- It allows access to urgent interpretation.                                                                                                                  
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation8')" class="clickable-item">Video Remote Interpretation (VRI) </li> 
+                                                    &nbsp;<div id="explanation8" style="display: none;">- Interpreters provide both visual and audio interpretations via video conferencing platforms.  
+                                                        <br>- Application areas include telemedicine, legal depositions, and business meetings.                                                                                                                                                                          
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation9')" class="clickable-item"> Escort Interpretation   </li> 
+                                                    &nbsp;<div id="explanation9" style="display: none;">- The interpreter accompanies a person or group of people during their travel or on-site visits.  
+                                                       <br> - Common in tours, cultural exchange, and business trips.                                                                                                                                                                                  
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation10')" class="clickable-item">Judicial or Court Interpretation</li> 
+                                                    &nbsp;<div id="explanation10" style="display: none;">• Legal: Specialized interpreting involving trials, depositions, or any other witness testimony.
+                                                        <br>• Requires knowledge of legal terminology with absolute confidentiality a must.                                                                                                                                                                             
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation11')" class="clickable-item">Medical Interpretation</li> 
+                                                    &nbsp;<div id="explanation11" style="display: none;">• Provides a means for health workers to communicate with all limited English proficient patients.  
+                                                        <br>• Brings about the accuracy of medical history, diagnosis, and treatment plans.                                                                                                                                                                          
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation12')" class="clickable-item">Media Interpretation</li> 
+                                                    &nbsp;<div id="explanation12" style="display: none;">• Translates live broadcasts, interviews, or news conferences in real-time television or radio.
+                                                        <br>•Requires far more fluency and expressiveness, needing also to convey tone and emotion.                                                                                                                                                                                                                                
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation13')" class="clickable-item">Cultural Interpretation</li> 
+                                                    &nbsp;<div id="explanation13" style="display: none;">• Fills the gap between two cultures beyond the simple words in language; that messages are conveyed in a culturally appropriate manner and sound.                                                                                                                                                                                                                              
+                                                    </div>
+
+                                                    <br><li onclick="showExplanation('explanation14')" class="clickable-item">Remote Simultaneous Interpretation (RSI)</li> 
+                                                    &nbsp;<div id="explanation14" style="display: none;">- Interpretation is done via video, online, via systems like Zoom or an RSI tool. 
+                                                       <br>- The most common virtual conferences are webinars. 
+                                                    </div>
+                                                
+                                                
+                                                
+                                                </ul>
+                                            </li>
+                                            
+                                            </li>
+                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="sub-topic">
+                <div class="subtopic-box">  
+                <h3 id="types-title">CHAPTER 2: Foundations of Translation and Interpreting</h3>
+                <p id="types-description">This chapter will provide an overview of basic concepts in translation 
+                    and community interpreting, along with an introduction to translation ethics.</p>
+                <button onclick="toggleSubSection('types-translation')">Learn More</button>
+                <div id="types-translation" class="sub-section" style="display: none;">
+                    <p id="types-content">There are various types of translation, each serving a unique purpose. Literary translation focuses on translating literature, while technical translation deals with specialized texts.</p>
+                    <button onclick="toggleSubTopics('types-subtopics')">Show Subtopics</button>
+                    <div id="types-subtopics" class="sub-topics" style="display: none;">
+                        <ul>
+                            <li>
+                                
+                                <span onclick="toggleSubtopicDetail('types-subtopic1')" class="clickable-box" style="display:flexbox;">
+                                    Introduction to Advanced Translation Central Issues
+                                </span>
+                                <div id="types-subtopic1" class="subtopic-detail" style="display: none;">
+                                    <p onclick="toggleDetails('translation-details-1')" class="clickable-paragraph">
+                                        Equivalence is some kind of ‘sameness’ or ‘similarity’ that ST and TT translation share at various levels, such as in linguistic, cultural, textual, or a combination of all levels.
+                                        &nbsp;<br>Equivalence is inevitably involved in any theory of translation that can be understood by the comparison of various texts in terms of form and meaning. 
+                                        <br><br>Some of the reason on why is it hard to achieve the exact equivalent in translation is because:
+                                        <br><br>Same Source Text can be interpreted differently by the same person on different occasions. 
+                                        <br><br>Subjectivity plays an important role in the translator’s interpretation of the ST and the translator’s translation strategies. 3)
+                                        <br><br>The target audience expectation may play an important role in terms of equivalent effect. 
+
+                                    </p>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-1')" class="clickable-box">
+                                        THE CONCEPT OF EQUIVALENCE BY VARIOUS SCHOLARS
+                                    </span>
+                                    <div id="types-subtopic1-1" class="subtopic-detail">
+                            
+                                    </div>
+                                
+                                    <!-- Subtopic 1.1.1 -->
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-1-1')" class="clickable-box">
+                                        VINAY AND DARBELNET (1958)
+                                    </span>
+                                    <div id="types-subtopic1-1-1" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-1-1')" class="clickable-paragraph">
+                                            <b>EQUIVALENCE AS TRANSLATION PROCEDURE</b>
+                                            <br>➡️Vinay and Darlbenet introduce two translation strategies: Direct translation and oblique translation
+                                            
+                                            <br><br>➡️The term ‘equivalence’ is used to a particular translation task that requires translating a text from one language to another by ‘‘using completely different stylistic and structural methods’’ in an attempt to create an effect that is the same for the two languages
+                                            
+                                            <br><br>➡️Equivalence is suitable when it comes to translating idioms and proverbs. 
+                                            
+                                            <br><br>➡️Example: 
+                                            two peas in a pod &nbsp; ➡️➡️➡️➡️➡️➡️➡️ &nbsp;Pelanduk dua serupa				
+                                            
+                                            <br><br>➡️According to Vinay and Darbelnet ‘it is in the situation of the SL text that translators have to look for a solution”
+                                            
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-2-2')" class="clickable-box">
+                                        ROMAN JAKOBSON (1959)
+                                    </span>
+                                    <div id="types-subtopic1-2-2" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-2-2')" class="clickable-paragraph">
+                                            <b>EQUIVALENCE IN DIFFERENCE</b>
+                                            <br>➡️ There are three type of translation which are:
+                                            <br>➡️Intralingual translation (within one language)
+                                            <br>➡️Interlingual translation (between two language)
+                                            <br>➡️Intersemiotic (Between sign systems)
+                                            <br><br>➡️Jakobson considers equivalence as “the cardinal problem of language and pivotal concern of linguistic”
+                                            <br><br>➡️Translation is possible regardless syntactical, cultural and lexical differences between two language.
+                                        </p>
+                                    </div>
+
+                                   <span onclick="toggleSubtopicDetail('types-subtopic1-3-3')" class="clickable-box">
+                                    NIDA AND TABER (1964/1969)
+                                    </span>
+                                    <div id="types-subtopic1-3-3" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-3-3')" class="clickable-paragraph">
+                                            <br><br>➡️Nida’s theory is from two major source namely:
+                                            <br><br>➡️Semantic and pragmatic
+                                            <br><br>➡️Chomsky’s generative-transformational model
+
+                                            <br><br>➡️Nida proposed two types of equivalence which are formal equivalence and dynamic equivalence.
+
+                                            <br><br>➡️Formal equivalence: Focus on the message in both form and content
+                                            <br><br>➡️Kianbakht (2020) stated that reproduction of f ST linguistics form with that emphasize on the fidelity to the lexical items and grammatical structures of the original text
+                                            <br><br>➡️Example:
+                                            <br>&nbsp;Les Copaque Animation “Puteri”
+                                            <br>&nbsp;ST: Tuan Puteri
+                                            <br>&nbsp;TT: Princess
+
+                                            <br><br>➡️Dynamic equivalence: Taking account the target audience. Text will be translated in a way that make more sense
+                                            <br><br>➡️Jiang (2020) stated that dynamic equivalence emphasizes the information receptor’s response
+                                            <br><br>➡️Reflected in a TT to adapt the function of the original ST to suit the target context
+                                            <br><br>➡️Example:
+                                            <br>&nbsp;From Les Copaque animation “Puteri” 
+                                            <br>&nbsp;ST: Tuan Hamba
+                                            <br>&nbsp;TT: You 
+                                            <br>
+                                            <br>&nbsp;ST: Ayahanda
+                                            <br>&nbsp;TT: Father
+                                            <br>
+                                            <br>&nbsp;ST: Tuan Hamba
+                                            <br>&nbsp;TT: Your Highness
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-4-4')" class="clickable-box">
+                                        CATFORD (1965)
+                                    </span>
+                                    <div id="types-subtopic1-4-4" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-4-4')" class="clickable-paragraph">
+                                            <br><br>➡️Catford defines equivalence in two categories: Category shift and level shift
+                                            <br><br>➡️Level shift: SL item at one linguistic level has TL equivalent at a different level
+                                            <br>
+                                            <br><br>➡️ Category shift: divided into structure shift which involves the changes in the 	
+                                            <br>➡️(a) Structure shift: Changes at grammar level
+                                            <br>➡️(b) Class-shift: Changes in class (eg: adjective into noun)
+                                            <br>➡️(c) Unit-shift: Changes in rank
+                                            <br>➡️(d) Intra-system shift: “SL  and  TL  possess  systems  which  approximately 	correspond formally 	as to their constitution, but when translation involves 	selection of a non-corresponding term in the TL system”
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-5-5')" class="clickable-box">
+                                        HOUSE (1977)
+                                    </span>
+                                    <div id="types-subtopic1-5-5" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-5-5')" class="clickable-paragraph">
+                                            <b>SEMANTIC AND PRAGMATIC EQUIVALENCE</b>
+                                            <br><br>➡️A TT has a function equivalent to the ST.
+                                            <br><br>➡️There are two types overt translation and covert translation
+                                            <br><br>➡️Overt translation: It looks like translation (terang-terangan)
+                                            <br><br>➡️Example:
+                                            <br>➡️ST: The Memoirs of Geisha
+                                            <br><b><br>➡️Source Text:</b> “...Mameha-san, I don’t know what has led you to this decision...” 
+                                            <br>(Arthur, p. 161). 
+                                            <br><b><br>➡️Target Text:</b>“...Mameha-san, saya tidak tahu apa yang mempengaruhi keputusanmu...” 
+                                            <br>(Abdul Latif, p.170).
+                                            <br><br>➡️Covert translation: Does not read like a translation (terselindung). The translated text should be functionally equivalent to ST)
+                                            <br><br>➡️Focus more on new culture:
+                                            <br><b><br>➡️Source Text:</b> “...Okonkwo brought the wine and they began to drink” 
+                                            <br>(Achebe, p. 97).
+                                            <br><b><br>➡️Target Text</b>“...Okonkwo mengambil tuak itu dan mereka mulai minum” 
+                                            <br>(Nazel, p. 141). 
+                                            <br><br>➡️ST: Things Fall Apart by Chinua Achebe.
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-6-6')" class="clickable-box">
+                                        NEWMARK (1981)
+                                    </span>
+                                    <div id="types-subtopic1-6-6" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-6-6')" class="clickable-paragraph">
+                                            <b>SEMANTIC AND COMMUNOCATIVE</b>
+                                            <br><br>➡️Semantic: Translate as closely to the semantic and syntactic structures of the second language allow.
+                                            <br><br>➡️Communicative:	Produce effect as close as possible to the effect Source Text reader
+                                            <br>
+                                            <br><br>➡️Semantic translation: Focus on form of SL
+                                            <br><br>➡️Communicative: Evoke the same effect or response on the target text reader.
+                                            
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-7-7')" class="clickable-box">
+                                        KOLLER (1979/1981)
+                                    </span>
+                                    <div id="types-subtopic1-7-7" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-7-7')" class="clickable-paragraph">
+                                            ➡️Proposed five type of equivalence:
+                                            <br><br>➡️Denotative equivalence: Equivalence of the extralinguistic content of a text. 
+                                            <br><br>➡️Connotative equivalence: Lexical choices by translator
+                                            <br><br>➡️Text-normative equivalence: Text-types
+                                            <br><br>➡️Pragmatic equivalence: Receiver-oriented
+                                            <br><br>➡️Formal equivalence relating to the form and aesthetics of the text 
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-8-8')" class="clickable-box">
+                                        BAKER (1992)
+                                    </span>
+                                    <div id="types-subtopic1-8-8" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-8-8')" class="clickable-paragraph">
+                                           ➡️Equivalence  at  word  and  above  word  level: Translator need to pay attention to single words as well as units smaller than the  word (morpheme). 
+
+                                            <br><br>➡️Grammatical  equivalence: Grammatical  categories  that  different languages  possess.
+                                            
+                                            <br><br>➡️Textual equivalence: Equivalence  between  ST  and  TT  with  reference  to  cohesion  and information. Three  main  factor: the  target  audience,  the purpose of the translation and the text type.
+                                            
+                                            <br><br>➡️Pragmatic equivalence. This type of equivalence focuses on implicature.
+                                            <br><b><br>➡️TRANSLATION LOSS</b>Loss occur on all language levels: Morphological, Syntactic, Textual and Stylistic
+                                            <br><b><br>➡️CATEGORY OF LOSS</b>Inevitable Loss<br>Avertable Loss
+                                            <br><br>➡️ Loss in translation occurs when a translator faces difficulties in the process of translation with certain terms that have no equivalents in the TL             
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-10-10')" class="clickable-box">
+                                        LEVEL OF LOSS
+                                    </span>
+                                    <div id="types-subtopic1-10-10" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-10-10')" class="clickable-paragraph">
+                                            ➡️Morphological: Word formation is a good mark of gain or loss in translation
+                                            <br>➡️Phonological Level: Loss in regard of consonant 
+                                            <br>➡️Semantic level: Loss in translation occur when the denotative or connotative meaning is lost of distorted
+                                        </p>
+                                    </div>
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-11-11')" class="clickable-box">
+                                        TRANSLATION GAIN
+                                    </span>
+                                    <div id="types-subtopic1-11-11" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-11-11')" class="clickable-paragraph">
+                                            <b>➡️DEFINITION:</b>Occurs when the translated text conveys additional meaning or emotional resonance that enhances understanding or appreciation.
+                                            <br><b><br>➡️ASPECT OF TRANSLATION GAIN:</b><br>Clarity:&nbsp; 
+                                            - Translators may use more precise terms in the target language that better convey the original message. 
+                                            <br><br>Cultural relevance:&nbsp;
+                                            - Translator may choose culturally relevant terms or expressions that can give better understanding to the target audience
+                                            <br><br>Enhance the contextual of the text: &nbsp;
+                                            - Translation may include additional context or explanation to clarify the meaning  
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-12-12')" class="clickable-box">
+                                        DEFINITION
+                                    </span>
+                                    <div id="types-subtopic1-12-12" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-12-12')" class="clickable-paragraph">
+                                            ➡️The degree of difficulty of translation depends on their nature, as well as on the translator’s abilities to translate certain part in source text.
+                                            <br><br>➡️Property of text that has no equivalence in target text.
+                                            <br><b><br>➡️Two type of untranslatability by Catford (1965)</b>
+                                            <br><br>a).Linguistic untranslatability : Occurs when there are no grammatical or syntactic equivalents in the TL
+                                            <br><br>b).Cultural untranslatability : The absence in the TL culture of a relevant situational feature of SL text.
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('types-subtopic1-13-13')" class="clickable-box">
+                                        STRATEGY TO OVERCOME UNTRANSLATABILITY
+                                    </span>
+                                    <div id="types-subtopic1-13-13" class="subtopic-detail">
+                                        <p onclick="toggleDetails('translation-details-1-13-13')" class="clickable-paragraph">
+                                            <b>➡️Adaptation</b><br>A translation procedure where translator replace the ST culture with a corresponding culture in TT.
+                                            <br><b><br>➡️Borrowing</b><br>Translator uses word or expression from ST directly to TT.
+                                            <br><b><br>➡️Calque</b><br>Translating SL word into TL word-by-word.
+                                            <br><b><br>➡️Paraphrase</b><br>Translator replace a word in the ST by group of expression in the TT.
+                                            <br><b><br>➡️Translator Note</b><br>Add footnote to give explanation on certain word.
+                                        </p>
+                                    </div>
+                                    </ul>  
+                            </li>
+                            <li>
+                                <span onclick="toggleSubtopicDetail('types-subtopic2')" class="clickable-box">
+                                    TRANSLATION STUDIES AND INTERDISCIPLINARITY
+                                </span>
+                                <div id="types-subtopic2" class="subtopic-detail">
+                                    <p onclick="toggleDetails('translation-details-2')" class="clickable-paragraph">
+                                        <br>Translation studies has evolved into a recognizable academic discipline that connects with various fields such as linguistics, cultural studies, and communication. 
+                                        <br><br>This interdisciplinary nature emphasizes the complexity of translation as not merely a linguistic activity but a cultural and social one.
+                                    </p>
+
+                                    <!-- Subtopic 2.1 -->
+                                    <span onclick="toggleSubtopicDetail('types-subtopic2-1')" class="clickable-box">
+                                        DISCIPLINE, INTERDISCIPLINE OR SUB-DISCIPLINE?
+                                    </span>
+                                    <div id="types-subtopic2-1" class="subtopic-detail">
+                                        <p>
+                                            <br><br>➡️ Translation studies has been seen as a sub-discipline of linguistics or comparative linguistics.
+                                            <br><br>➡️ Translation studies has evolved into a recognizable academic discipline that connects with various fields such as linguistics, cultural studies, and communication. 
+                                            <br><br>➡️ This interdisciplinary nature emphasizes the complexity of translation as not merely a linguistic activity but a cultural and social one. This perspective explores how translation affects and is affected by cultural context and not just linguistic context only.
+                                        </p>
+                                    </div>
+                            
+                                        <!-- Subtopic 2.2 -->
+                                        <span onclick="toggleSubtopicDetail('types-subtopic2-2')" class="clickable-box subtopic" id="mary-title2">
+                                            MARY SNELL-HORNBY’S INTEGRATED APPROACH
+                                        </span>
+                                    
+                                        <div id="types-subtopic2-2" class="subtopic-detail">
+                                            <div class="english-images">
+                                                <p>
+                                                    <img src="pic CP2/slide 4.jpg" alt="slide 1" style="width: 70%; height: auto;">
+                                                    <img src="pic CP2/slide 5.jpg" alt="slide 2" style="width: 70%; height: auto;">
+                                                    <img src="pic CP2/slide 6.jpg" alt="slide 3" style="width: 70%; height: auto;">
+                                                    <img src="pic CP2/slide 7.jpg" alt="slide 4" style="width: 70%; height: auto;">
+                                                </p>
+                                            </div>
+                                            <div class="malay-images" style="display: none;">
+                                                <p>
+                                                    <img src="malay pic cp2/cp2/Slide4.JPG" alt="Malay slide 1" style="width: 70%; height: auto;">
+                                                    <img src="malay pic cp2/cp2/Slide5.JPG" alt="Malay slide 2" style="width: 70%; height: auto;">
+                                                    <img src="malay pic cp2/cp2/Slide6.JPG" alt="Malay slide 3" style="width: 70%; height: auto;">
+                                                    <img src="malay pic cp2/cp2/Slide7.JPG" alt="Malay slide 4" style="width: 70%; height: auto;">
+                                                    
+                                                </p>
+                                            </div>
+
+
+
+                                        </div>
+
+                                            <span onclick="toggleSubtopicDetail('types-subtopic2-3')"  class="clickable-box">
+                                                INTERDISCIPLINARY APPROACH
+                                            </span>
+                                            <div id="types-subtopic2-3" class="subtopic-detail" style="display: none;">
+                                                <p> 
+                                                    <img src="pic CP2/slide 8.jpg" alt="slide 8 1" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                            <span onclick="toggleSubtopicDetail('types-subtopic2-4')"  class="clickable-box">
+                                                THE FUTURE OF TRANSLATION STUDIES
+                                            </span>
+                                            <div id="types-subtopic2-4" class="subtopic-detail" style="display: none;">
+                                                <p> 
+                                                    <img src="pic CP2/slide 9.jpg" alt="slide 9" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                            <span onclick="toggleSubtopicDetail('types-subtopic2-5')"  class="clickable-box">
+                                                TRANSLATION AS LANGUAGING
+                                            </span>
+                                            <div id="types-subtopic2-5" class="subtopic-detail" style="display: none;">
+                                                <p> 
+                                                    <img src="pic CP2/slide 10.jpg" alt="slide 10" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                            <span onclick="toggleSubtopicDetail('types-subtopic2-6')"  class="clickable-box">
+                                                TRANSLATION AS A LANGUAGE LEARNING METHOD
+                                            </span>
+                                            <div id="types-subtopic2-6" class="subtopic-detail" style="display: none;">
+                                                <p> 
+                                                    <img src="pic CP2/slide 11.jpg" alt="slide 11" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                            <span onclick="toggleSubtopicDetail('types-subtopic2-7')"  class="clickable-box">
+                                                CONCLUSION
+                                            </span>
+                                            <div id="types-subtopic2-7" class="subtopic-detail" style="display: none;">
+                                                <p> 
+                                                    <img src="pic CP2/slide 12.jpg" alt="slide 12" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-topic">
+                <div class="subtopic-box">
+                    <h3 id="techniques-title">CHAPTER 3: Language Accuracy and Technical Skills in Translation</h3>
+                    <p id="techniques-description">This chapter focuses on the linguistic aspects of translation, including grammar, terminology, and the importance of accuracy.</p>
+                    <button onclick="toggleSubSection('translation-techniques')">Learn More</button>
+                    <div id="translation-techniques" class="sub-section" style="display: none;">
+                        <p id="techniques-content">Translation techniques vary based on the text type and target audience. Techniques like adaptation and localization ensure that the translated text resonates with the target culture.</p>
+                        <button onclick="toggleSubTopics('techniques-subtopics')">Show Subtopics</button>
+                        <div id="techniques-subtopics" class="sub-topics" style="display: none;">
+                            <ul>
+                                <li>
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic1')" class="clickable-box">
+                                        PUNCTUATION
+                                    </span>
+                                    <div id="techniques-subtopic1" class="subtopic-detail" style="display: none;">
+                                        <p id="translation-techniques1" class="clickable-paragraph" onclick="toggleDetails('translation-techniques1')">
+                                            semicolon,<br><br>
+                                            comma<br><br>
+                                            full stop<br><br>
+                                            colon<br><br>
+                                            hyphen<br><br>
+                                            exclamation mark<br><br>
+                                            etc.
+                                        </p>
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-1')" class="clickable-box">
+                                            THE BASIC GUIDELINES
+                                        </span>
+                                        <div id="techniques-subtopic1-1" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 1.jpg" alt="new 1" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-2')" class="clickable-box">
+                                            IF YOU' RE NOT CAREFUL...
+                                        </span>
+                                        <div id="techniques-subtopic1-2" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 2.jpg" alt="new 2" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-3')" class="clickable-box">
+                                            Clarity and Accuracy
+                                        </span>
+                                        <div id="techniques-subtopic1-3" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 3.jpg" alt="new 3" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-4')" class="clickable-box">
+                                            Explanation Punctuation
+                                        </span>
+                                        <div id="techniques-subtopic1-4" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 4.jpg" alt="new 4" style="width: 80%; height: auto;">
+                                                <img src="pic CP2/new 5.jpg" alt="new 5" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-5')" class="clickable-box">
+                                            PUNCTUATION Errors
+                                        </span>
+                                        <div id="techniques-subtopic1-5" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 6.jpg" alt="new 6" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-6')" class="clickable-box">
+                                            Punctuation Can Change Meaning
+                                        </span>
+                                        <div id="techniques-subtopic1-6" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 7.jpg" alt="new 7" style="width: 80%; height: auto;">
+                                                <img src="pic CP2/new 8.jpg" alt="new 8" style="width: 80%; height: auto;">
+                                                <img src="pic CP2/new 9.jpg" alt="new 9" style="width: 80%; height: auto;">
+                                                <img src="pic CP2/new 10.jpg" alt="new 10" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic1-7')" class="clickable-box">
+                                            CONCLUSION
+                                        </span>
+                                        <div id="techniques-subtopic1-7" class="subtopic-detail" style="display: none;">
+                                            <p>
+                                                <img src="pic CP2/new 11.jpg" alt="new 11" style="width: 80%; height: auto;">
+                                            </p>
+                                        </div>
+
+                            </li>
+                            <li>
+                                <span onclick="toggleSubtopicDetail('techniques-subtopic2')" class="clickable-box">
+                                    EQUIVALENCE ABOVE WORD LEVEL COLLOCATION
+                                </span>
+                                <div id="techniques-subtopic2" class="subtopic-detail" style="display: none;">
+                                    <p id="translation-techniques1" class="clickable-paragraph" onclick="toggleDetails('translation-techniques2')">
+                                        <b>INTRODUCTION</b>
+                                        <br><br>Equivalence above the word level refers to the way phrases or expressions (collocations) can carry meaning that is more than just the sum of their individual words. 
+
+                                        <br><br>Understanding collocations is important because it  often reflect cultural aspect and idiomatic usage that may not be translated directly. 
+                                        
+                                        <br><br>For example, "make a decision" is a standard collocation in English, and a direct translation into another language may not have the same naturalness or idiomatic quality as the English language.
+                                    </p>
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-1')" class="clickable-box">
+                                        WHAT IS COLLOCATION?
+                                    </span>
+                                    <div id="techniques-subtopic2-1" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n1.jpg" alt="n 1" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-2')" class="clickable-box">
+                                        TYPE OF COLLOCATION?
+                                    </span>
+                                    <div id="techniques-subtopic2-2" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n2.jpg" alt="n 2" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-3')" class="clickable-box">
+                                        COLLOCATION WITH RANGE
+                                    </span>
+                                    <div id="techniques-subtopic2-3" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n3.jpg" alt="n 3" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-4')" class="clickable-box">
+                                        COLLOCATION WITH MARKEDNESS
+                                    </span>
+                                    <div id="techniques-subtopic2-4" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n4.jpg" alt="n4" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n5.jpg" alt="n4" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-5')" class="clickable-box">
+                                        COLLOCATION AND REGISTER
+                                    </span>
+                                    <div id="techniques-subtopic2-5" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n6.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n7.jpg" alt="n5" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-6')" class="clickable-box">
+                                        COLLOCATION AND REGISTER
+                                    </span>
+                                    <div id="techniques-subtopic2-6" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n6.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n7.jpg" alt="n5" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic2-7')" class="clickable-box">
+                                        COLLOCATION ISSUES IN TRANSLATION
+                                    </span>
+                                    <div id="techniques-subtopic2-7" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/n8.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n9.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n10.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n11.jpg" alt="n5" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/n12.jpg" alt="n5" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+                            </li>
+                            <li>
+                                <span onclick="toggleSubtopicDetail('techniques-subtopic3')" class="clickable-box">
+                                    GRAMMAR ERRORS
+                                </span>
+                                <div id="techniques-subtopic3" class="subtopic-detail" style="display: none;">
+                                    <p id="translation-techniques3" class="clickable-paragraph" onclick="toggleDetails('translation-techniques3')">
+                                        
+                                    </p>
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-1')" class="clickable-box">
+                                        NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-1" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g1.jpg" alt="g1" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-2')" class="clickable-box">
+                                        PROPER NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-2" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g2.jpg" alt="g2" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-3')" class="clickable-box">
+                                        COMMON NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-3" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g3.jpg" alt="g3" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-4')" class="clickable-box">
+                                        COLLECTIVE NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-4" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g4.jpg" alt="g4" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-5')" class="clickable-box">
+                                        MATERIAL NOUN & ABSTRACT NOUN
+                                    </span>
+                                    <div id="techniques-subtopic3-5" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g5.jpg" alt="g5" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-6')" class="clickable-box">
+                                        CLASSIFICATION OF NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-6" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g6.jpg" alt="g6" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-7')" class="clickable-box">
+                                        Countable Noun
+                                    </span>
+                                    <div id="techniques-subtopic3-7" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g7.jpg" alt="g7" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-8')" class="clickable-box">
+                                        CLASSIFICATION OF NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-8" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g8.jpg" alt="g8" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/g9.jpg" alt="g9" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-9')" class="clickable-box">
+                                        UNCONTABLE NOUNS
+                                    </span>
+                                    <div id="techniques-subtopic3-9" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g10.jpg" alt="g10" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-10')" class="clickable-box">
+                                       NOUNS AND CASE
+                                    </span>
+                                    <div id="techniques-subtopic3-10" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/g11.jpg" alt="g11" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/g12.jpg" alt="g12" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+
+                                    <span onclick="toggleSubtopicDetail('techniques-subtopic3-11')" class="clickable-box">
+                                        NOUNS AND GENDER
+                                     </span>
+                                     <div id="techniques-subtopic3-11" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g13.jpg" alt="g13" style="width: 80%; height: auto;">
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-12')" class="clickable-box">
+                                        PERSONIFICATION OF NON LIVING THINGS
+                                     </span>
+                                     <div id="techniques-subtopic3-12" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g14.jpg" alt="g14" style="width: 80%; height: auto;">
+                                             <img src="pic CP2/g15.jpg" alt="g15" style="width: 80%; height: auto;">
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-13')" class="clickable-box">
+                                        SUBJECT-VERB AGREEMENT EXERCISES
+                                     </span>
+                                     <div id="techniques-subtopic3-13" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g16.jpg" alt="g16" style="width: 80%; height: auto;">
+                                             
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-14')" class="clickable-box">
+                                        ANSWERS: SUBJECT-VERB AGREEMENT 
+                                     </span>
+                                     <div id="techniques-subtopic3-14" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g17.jpg" alt="g17" style="width: 80%; height: auto;">
+                                             
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-15')" class="clickable-box">
+                                        COMMONLY CONFUSED PAIR 
+                                     </span>
+                                     <div id="techniques-subtopic3-15" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g18.jpg" alt="g18" style="width: 80%; height: auto;">
+                                             
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-16')" class="clickable-box">
+                                        FIND MISTAKES 
+                                     </span>
+                                     <div id="techniques-subtopic3-16" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g19.jpg" alt="g18" style="width: 80%; height: auto;">
+                                             
+                                         </p>
+                                     </div>
+
+                                     <span onclick="toggleSubtopicDetail('techniques-subtopic3-17')" class="clickable-box">
+                                        ANSWERS
+                                     </span>
+                                     <div id="techniques-subtopic3-17" class="subtopic-detail" style="display: none;">
+                                         <p>
+                                             <img src="pic CP2/g20.jpg" alt="g18" style="width: 80%; height: auto;">
+                                             <img src="pic CP2/g21.jpg" alt="g18" style="width: 80%; height: auto;">
+                                             
+                                         </p>
+                                     </div>
+                                    </li>
+                                    <li>
+                                        <span onclick="toggleSubtopicDetail('techniques-subtopic4')" class="clickable-box">
+                                            SYNTATIC ERRORS 
+                                        </span>
+                                        <div id="techniques-subtopic4" class="subtopic-detail" style="display: none;">
+                                            <p id="translation-techniques3" class="clickable-paragraph" onclick="toggleDetails('translation-techniques4')">
+                                                
+                                            </p>
+
+                                            <span onclick="toggleSubtopicDetail('techniques-subtopic4-1')" class="clickable-box">
+                                                Sytax and Idiom (problems)
+                                            </span>
+                                            <div id="techniques-subtopic4-1" class="subtopic-detail" style="display: none;">
+                                                <p>
+                                                    <img src="pic CP2/s1.jpg" alt="s1" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+
+                                            <span onclick="toggleSubtopicDetail('techniques-subtopic4-2')" class="clickable-box">
+                                                Syntatic change and variability
+                                            </span>
+                                            <div id="techniques-subtopic4-2" class="subtopic-detail" style="display: none;">
+                                                <p>
+                                                    <img src="pic CP2/s2.jpg" alt="s2" style="width: 80%; height: auto;">
+                                                    <img src="pic CP2/s3.jpg" alt="s3" style="width: 80%; height: auto;">
+                                                </p>
+                                            </div>
+                            </li>
+                        <li>
+                        <span onclick="toggleSubtopicDetail('techniques-subtopic6')" class="clickable-box">
+                            Terminology Editing
+                        </span>
+                        <div id="techniques-subtopic6" class="subtopic-detail" style="display: none;">
+                            <p id="translation-techniques6" class="clickable-paragraph" onclick="toggleDetails('translation-techniques6')">
+                                
+                            </p>
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-1')" class="clickable-box">
+                                Terminology that editors commonly use
+                            </span>
+                            <div id="techniques-subtopic6-1" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide2.JPG" alt="m1" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-2')" class="clickable-box">
+                                Proofreading 
+                            </span>
+                            <div id="techniques-subtopic6-2" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide3.JPG" alt="m2" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide4.JPG" alt="m2" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-3')" class="clickable-box">
+                                Copyediting
+                            </span>
+                            <div id="techniques-subtopic6-3" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide5.JPG" alt="m3" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide6.JPG" alt="m3" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-4')" class="clickable-box">
+                                Copy-edit scope
+                            </span>
+                            <div id="techniques-subtopic6-4" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide7.JPG" alt="m4" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide8.JPG" alt="m4" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide9.JPG" alt="m4" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-5')" class="clickable-box">
+                                Hard and soft copy-edits
+                            </span>
+                            <div id="techniques-subtopic6-5" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide10.JPG" alt="m5" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-6')" class="clickable-box">
+                                Developmental editing
+                            </span>
+                            <div id="techniques-subtopic6-6" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide11.JPG" alt="m6" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide12.JPG" alt="m6" style="width: 80%; height: auto;">
+                                    <img src="t1/Slide13.JPG" alt="m6" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+
+                            <span onclick="toggleSubtopicDetail('techniques-subtopic6-7')" class="clickable-box">
+                                Summary
+                            </span>
+                            <div id="techniques-subtopic6-7" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="t1/Slide14.JPG" alt="m7" style="width: 80%; height: auto;">
+                                </p>s
+                            </div>
+                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-topic">
+                <div class="subtopic-box">
+                <h3 id="challenges-title">Chapter 4: Advanced Translation Techniques and Editing Practices</h3>
+                <p id="challenges-description">This chapter covers the refinement of translation skills through editing 
+                    and advanced techniques, including the use of machine translation.</p>
+                <button onclick="toggleSubSection('translation-challenges')">Learn More</button>
+                <div id="translation-challenges" class="sub-section" style="display: none;">
+                    <p id="challenges-content">Translators often face challenges such as cultural nuances, idiomatic expressions, and maintaining the original text's tone and style.</p>
+                    <button onclick="toggleSubTopics('challenges-subtopics')">Show Subtopics</button>
+                    <div id="challenges-subtopics" class="sub-topics" style="display: none;">
+                        <ul>
+                            <li>
+                                <span onclick="toggleSubtopicDetail('challenges-subtopic4')" class="clickable-box">
+                                    COPYWRITING 
+                                </span>
+                                <div id="challenges-subtopic4" class="subtopic-detail" style="display: none;">
+                                    <p id="challenges-techniques4" class="clickable-paragraph" onclick="toggleDetails('challenges-techniques4')">
+                                        
+                                    </p>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-1')" class="clickable-box">
+                                        What Is COPYWRITING
+                                    </span>
+                                    <div id="challenges-subtopic4-1" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c1.jpg" alt="g1" style="width: 80%; height: auto;">
+                                            <img src="pic CP2/c2.jpg" alt="g2" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-2')" class="clickable-box">
+                                        The role copywriters
+                                    </span>
+                                    <div id="challenges-subtopic4-2" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c3.jpg" alt="g3" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-3')" class="clickable-box">
+                                        Copywriters needed in Advertising?
+                                    </span>
+                                    <div id="challenges-subtopic4-3" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c4.jpg" alt="g4" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-4')" class="clickable-box">
+                                        Where you find copywriters?
+                                    </span>
+                                    <div id="challenges-subtopic4-4" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c5.jpg" alt="g5" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-5')" class="clickable-box">
+                                        Copywriters as communicators
+                                    </span>
+                                    <div id="challenges-subtopic4-5" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c6.jpg" alt="g6" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-6')" class="clickable-box">
+                                        Writing with purpose
+                                    </span>
+                                    <div id="challenges-subtopic4-6" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c7.jpg" alt="g7" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-7')" class="clickable-box">
+                                        Understanding your product
+                                    </span>
+                                    <div id="challenges-subtopic4-7" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c8.jpg" alt="g8" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-8')" class="clickable-box">
+                                        Knowing your audience                                           
+                                     </span>
+                                    <div id="challenges-subtopic4-8" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c9.jpg" alt="g9" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-9')" class="clickable-box">
+                                        Mastering the language                                           
+                                     </span>
+                                    <div id="challenges-subtopic4-9" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c10.jpg" alt="g10" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-10')" class="clickable-box">
+                                        Sharpening your style                                         
+                                     </span>
+                                    <div id="challenges-subtopic4-10" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c11.jpg" alt="g11" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-11')" class="clickable-box">
+                                        Rules and restrictions                                         
+                                     </span>
+                                    <div id="challenges-subtopic4-11" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c12.jpg" alt="g12" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-12')" class="clickable-box">
+                                        Creating effective copy                                         
+                                     </span>
+                                    <div id="challenges-subtopic4-12" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c13.jpg" alt="g13" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-13')" class="clickable-box">
+                                        Advertising around the world                                        
+                                     </span>
+                                    <div id="challenges-subtopic4-13" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c14.jpg" alt="g14" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+    
+                                    <span onclick="toggleSubtopicDetail('challenges-subtopic4-14')" class="clickable-box">
+                                        CONCLUSION                                       
+                                     </span>
+                                    <div id="challenges-subtopic4-14" class="subtopic-detail" style="display: none;">
+                                        <p>
+                                            <img src="pic CP2/c15.jpg" alt="g15" style="width: 80%; height: auto;">
+                                        </p>
+                                    </div>
+                    </li>
+                    <li>
+                        <span onclick="toggleSubtopicDetail('challenges-subtopic5')" class="clickable-box">
+                            Editing and Proofreading In Translation
+                        </span>
+                        <div id="challenges-subtopic5" class="subtopic-detail" style="display: none;">
+                            <p id="challenges-techniques5" class="clickable-paragraph" onclick="toggleDetails('challenges-techniques5')">
+                                
+                            </p>
+                            <span onclick="toggleSubtopicDetail('challenges-subtopic5-1')" class="clickable-box">
+                                What Is Editing
+                            </span>
+                            <div id="challenges-subtopic5-1" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="pic CP2/e1.jpg" alt="e1" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+    
+                            <span onclick="toggleSubtopicDetail('challenges-subtopic5-2')" class="clickable-box">
+                                What is Proofreading and Explanation
+                            </span>
+                            <div id="challenges-subtopic5-2" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="pic CP2/e2.jpg" alt="e2" style="width: 80%; height: auto;">
+                                    <img src="pic CP2/e3.jpg" alt="e3" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+    
+                            <span onclick="toggleSubtopicDetail('challenges-subtopic5-3')" class="clickable-box">
+                                Strategies of the proofreading process 
+                            </span>
+                            <div id="challenges-subtopic5-3" class="subtopic-detail" style="display: none;">
+                                <p>
+                                    <img src="pic CP2/e4.jpg" alt="e4" style="width: 80%; height: auto;">
+                                    <img src="pic CP2/e5.jpg" alt="e5" style="width: 80%; height: auto;">
+                                    <img src="pic CP2/e6.jpg" alt="e6" style="width: 80%; height: auto;">
+                                </p>
+                            </div>
+                            
+            </li>
+            <li>
+                <span onclick="toggleSubtopicDetail('challenges-subtopic6')" class="clickable-box">
+                    MACHINE TRANSLATION POST-EDITING
+                </span>
+                <div id="challenges-subtopic6" class="subtopic-detail" style="display: none;">
+                    <p id="challenges-techniques6" class="clickable-paragraph" onclick="toggleDetails('challenges-techniques6')">
+                        
+                    </p>
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-1')" class="clickable-box">
+                        What is machine translation post-editing?
+                    </span>
+                    <div id="challenges-subtopic6-1" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m1.jpg" alt="m1" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-2')" class="clickable-box">
+                        What is machine translation?
+                    </span>
+                    <div id="challenges-subtopic6-2" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m2.jpg" alt="m2" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-3')" class="clickable-box">
+                        Is post-editing the same as review?
+                    </span>
+                    <div id="challenges-subtopic6-3" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m3.jpg" alt="m3" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-4')" class="clickable-box">
+                        Post-editing process
+                    </span>
+                    <div id="challenges-subtopic6-4" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m4.jpg" alt="m4" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-5')" class="clickable-box">
+                        The importance of post-editing machine translation
+                    </span>
+                    <div id="challenges-subtopic6-5" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m5.jpg" alt="m5" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-6')" class="clickable-box">
+                        Tool that aim to advance the theory and practice of post-editing
+                    </span>
+                    <div id="challenges-subtopic6-6" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m6.jpg" alt="m6" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+    
+                    <span onclick="toggleSubtopicDetail('challenges-subtopic6-7')" class="clickable-box">
+                        CONCLUSION
+                    </span>
+                    <div id="challenges-subtopic6-7" class="subtopic-detail" style="display: none;">
+                        <p>
+                            <img src="pic CP2/m7.jpg" alt="m7" style="width: 80%; height: auto;">
+                        </p>
+                    </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 An Inductory Workbook on Translation. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
